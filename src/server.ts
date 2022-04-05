@@ -4,7 +4,7 @@ import Route from "./routes/routes"
 import cors from 'cors'
 
 const app = express()
-const PORT = 3001 || process.env.PORT
+const PORT = process.env.PORT || 3001 
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
